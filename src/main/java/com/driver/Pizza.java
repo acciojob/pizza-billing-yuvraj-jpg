@@ -31,7 +31,7 @@ public class Pizza {
         this.addTakeaway=false;
         this.calculateBill=false;
 
-        this.bill = "Base Price Of The Pizza:" + this.price + "\n";
+        this.bill =this.bill+ "Base Price Of The Pizza: " + this.price + "\n";
     }
 
     public int getPrice(){
@@ -65,17 +65,17 @@ public class Pizza {
         if(this.calculateBill==false){
             // check for cheese
             if(this.addExtraCheese==true){
-                this.bill = this.bill + "Extra Cheese Added:" + this.cheeseprice + "\n";
+                this.bill = this.bill + "Extra Cheese Added: " + this.cheeseprice + "\n";
             }
             // check for tooping
             if(this.addExtraToppings==true){
-                this.bill = this.bill +"Extra Toppings Added:"+ this.topping + "\n";
+                this.bill = this.bill +"Extra Toppings Added: "+ this.topping + "\n";
             }
             // check for takeaway
             if(this.addTakeaway==true){
-                this.bill = this.bill +"Paperbag Added:"+ this.takeaway + "\n";
+                this.bill = this.bill +"Paperbag Added: "+ this.takeaway + "\n";
             }
-            this.bill = this.bill +"Total Price:" +this.price+ "\n";
+            this.bill = this.bill +"Total Price: " +this.price+ "\n";
             this.calculateBill = true;
 
         }
