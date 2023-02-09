@@ -40,7 +40,7 @@ public class Pizza {
 
     public void addExtraCheese(){
         if(this.addExtraCheese==false){
-            price = price + this.cheeseprice;
+            this.price = this.price + this.cheeseprice;
             this.addExtraCheese=true;
         }
         
@@ -49,14 +49,14 @@ public class Pizza {
     public void addExtraToppings(){
         
         if(this.addExtraToppings==false){
-            price = price + this.topping;
+            this.price = this.price + this.topping;
             this.addExtraToppings=true;
         }
     }
 
     public void addTakeaway(){
         if(this.addTakeaway==false){
-            price = price + this.takeaway;
+            this.price = this.price + this.takeaway;
             this.addTakeaway=true;
         }
     }
