@@ -31,7 +31,7 @@ public class Pizza {
         this.addTakeaway=false;
         this.calculateBill=false;
 
-        this.bill = "Base Price Of The Pizza:" + this.price + "\n";
+        this.bill = "Base Price Of The Pizza: " + this.price + "\n";
     }
 
     public int getPrice(){
